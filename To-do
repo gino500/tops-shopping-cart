@@ -1,0 +1,25 @@
+-Build Shopping Cart App
+-Home Page
+-Shop Page
+-Checkout Page
+
+<App>
+    <Nav/>
+    <Home/>
+</App>
+
+<Home>
+    <div>...Content</div>
+    <btn>Links to Shop Page</btn>
+</Home>
+
+<Shop>
+    <div>....Content</div>
+    <btn>routes to checkout</btn>
+</Shop>
+
+<Nav>
+    <btn>Link --> <Home/></btn>
+    <btn>Link --> <Shop/></btn>
+    <btn>Link --> checkout</btn>
+</Nav>
