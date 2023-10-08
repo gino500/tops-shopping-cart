@@ -1,29 +1,14 @@
 import { useState, useEffect } from "react";
-import ShopCard from "./ShopCard";
+import Navbar from "./Navbar";
+import Card from "./Card";
 
 const Shop = () => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products/1", {
-      mode: "cors",
-    })
-      .then(response => response.json())
-      .then(response => setData(response.image));
-  }, []);
-
-  const imgStyle = {
-    height: "100px",
-    width: "100px",
-  };
-
+  const url = "https://fakestoreapi.com/products?limit=15";
   return (
     <>
+      <Navbar />
       <div>Shopping Page!</div>
-
-      <ShopCard props={data} />
+      <Card url={url} />
     </>
   );
 };
