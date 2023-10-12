@@ -31,20 +31,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-/*{
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "home",
-    element: <Home/>
-  },
-  {
-    path: "shop",
-    element: <Shop />,
-  },
-  {
-    path: "/shop/checkout",
-    element: <Checkout/>
-  } */
