@@ -14,7 +14,7 @@ const Home = () => {
         <h1>Featured Item</h1>
         <Card url={url} />
       </div>
-      <Link to="shop">Shop Now</Link>
+      <Link to="/shop">Shop Now</Link>
     </>
   );
 };
